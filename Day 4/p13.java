@@ -1,0 +1,23 @@
+import java.util.*;
+public class p13
+{
+    public static void main()
+
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=0,b=1;
+        int n;
+        System.out.print("Enter the range of Fibonacci series = ");
+        n=sc.nextInt();
+        System.out.println();
+        System.out.print("Fibonacci series is "+a+" "+b+" ");
+        for(int i=1;i<=n-2;i++)
+        {
+          int t=a+b;
+          a=b;
+          b=t;
+          System.out.print(t+" ");
+
+        }
+    }
+}

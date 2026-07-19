@@ -1,0 +1,37 @@
+import java.util.*;
+public class p16
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,i;
+        System.out.print("Enter the value of n = ");
+        n=sc.nextInt();
+        System.out.println();
+        for(i=1;i<=n;i++)
+        {
+            int t=i;
+            int q=i;
+            int c=0;
+            double s=0;
+            int r=0;
+
+            while(t>0)
+            {
+                r=t%10;
+                c++;
+                t=t/10;
+            }
+            while(q>0)
+            {
+                r=q%10;
+                s=s+Math.pow(r,c);
+                q=q/10;
+            }
+            if(s==i)
+            {
+                System.out.print(i+" ");
+            }
+        }
+    }
+}
