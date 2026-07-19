@@ -1,0 +1,27 @@
+import java.util.*;
+public class p9
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,i,c=0;
+        System.out.print("Enter the number = ");
+        n=sc.nextInt();
+        System.out.println();
+        for(i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                c++;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        if(c==2)
+            System.out.print("Number is a prime number");
+        else
+            System.out.print("Number is not a prime number");
+    }
+}
