@@ -1,0 +1,34 @@
+import java.util.*;
+public class Q19
+{
+    public static void main() 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        System.out.print("Enter a positive number =  ");
+        n=sc.nextInt();
+        if(n<=1)
+        {
+         System.out.println("No prime factors for numbers less than or equal to 1.");
+        }
+        System.out.print("Prime factors of " + n + " are: ");
+        while(n%2==0) 
+        {
+            System.out.print(2 + " ");
+            n=n/2;
+        }
+        for(int i=3;i*i<=n;i=i+2) 
+        {
+            while(n%i==0) 
+            {
+                System.out.print(i + " ");
+                n=n/i;
+            }
+        }
+        if(n>2) 
+        {
+         System.out.print(n);
+        }
+        System.out.println();
+    }
+}

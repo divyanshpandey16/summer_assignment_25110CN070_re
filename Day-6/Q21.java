@@ -1,0 +1,24 @@
+import java.util.*;
+public class Q21
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a decimal number = ");
+        int d=sc.nextInt();
+        if (d==0) 
+        {
+         System.out.println("Binary number = 0");
+        }
+        String b=""; 
+        int n=d;
+        while (n>0) 
+        {
+            int r=n%2;
+            b=r+b;
+            n=n/2;
+        }
+        System.out.println("Binary number = " + b);
+    }
+}
+ 
